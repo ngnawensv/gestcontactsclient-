@@ -1,1 +1,31 @@
-<p>nouveau-contact works!</p>
+<div class="card">
+  <div class="card-header bg-primary">New contact</div>
+  <!--  #f represente le id, f.value signifie toutes les données dans le formulaire-->
+  <div class="card-body">
+    <form #f="ngForm" (ngSubmit)="saveContat(f.value)">
+      <div class="form-group">
+        <label class="control-label">Nom: </label>
+<!--        #nom="ngModel" :exportation de la variable nom, pas besoin de la creer-->
+        <!--        <input #nom="ngModel class="form-control" type="text" ngModel name="nom">-->
+        <input class="form-control" type="text" ngModel name="nom">
+      </div>
+      <div class="form-group">
+        <label class="control-label">Prénom: </label>
+        <input class="form-control" type="text" ngModel name="prenom">
+      </div>
+      <div class="form-group">
+        <label class="control-label">Date Naissnce: </label>
+        <input class="form-control" type="text" ngModel name="datenaissance">
+      </div>
+      <div class="form-group">
+        <label class="control-label">Email: </label>
+        <input class="form-control" type="text" ngModel name="email">
+      </div>
+      <div class="form-group">
+        <label class="control-label">Tél: </label>
+        <input class="form-control" type="text" ngModel name="tel">
+      </div>
+      <button class="btn btn-primary" type="submit">Save</button>
+    </form>
+  </div>
+</div>

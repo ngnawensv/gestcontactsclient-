@@ -10,6 +10,7 @@ import { NewContactComponent } from './new-contact/new-contact.component';
 import { EditContactComponent } from './edit-contact/edit-contact.component';
 import { HomeComponent } from './home/home.component';
 import { NouveauContactComponent } from './nouveau-contact/nouveau-contact.component';
+import { NouveauContact1Component } from './nouveau-contact1/nouveau-contact1.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NouveauContactComponent } from './nouveau-contact/nouveau-contact.compo
     NewContactComponent,
     EditContactComponent,
     HomeComponent,
-    NouveauContactComponent
+    NouveauContactComponent,
+    NouveauContact1Component
   ],
   imports: [
     BrowserModule,

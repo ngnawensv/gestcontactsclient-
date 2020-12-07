@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="card-header bg-primary"> New contact</div>
+  <div class="card-body">
+    <div class="form-group">
+      <label class="control-label">Nom: </label>
+      <input class="form-control" type="text" [(ngModel)]="contact.nom">
+    </div>
+    <div>
+      <label control-label>Prenom: </label>
+      <input class="form-control" type="text" [(ngModel)]="contact.prenom">
+    </div>
+    <div>
+      <label control-label>Date de naissance: </label>
+      <input class="form-control" type="date" [(ngModel)]="contact.date_naissance">
+    </div>
+    <div>
+      <label control-label>Email: </label>
+      <input class="form-control" type="text" [(ngModel)]="contact.email">
+    </div>
+    <div>
+      <label control-label>Telephone: </label>
+      <input class="form-control" type="text" [(ngModel)]="contact.tel">
+    </div>
+    <button class="btn btn-primary" (click)="saveContat(contact)">Save</button>
+  </div>
+</div>
